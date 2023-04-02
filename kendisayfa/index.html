@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<div class="transparent">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Bitirme Projesi</h1>
+    <h2 id="description">Freecodecamp Bitirme Projesi</h2>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="survey-form">
+        <fieldset>
+
+          <label id="name-label">Adınız: </label>
+          <br />
+          <input type="text" name="name" id="name" class="form-control" placeholder="Adınızı Girin" size="40" required />
+          <br />
+          <label id="email-label">Email:</label>
+          <br />
+          <input id="email" type="email" placeholder="E-postanızı Girin" size="40" required />
+          <br />
+          <label id="number-label">Age (optimal)</label><br />
+          <input id="number" type="number" placeholder="Yaşınızı Girin" max="120" min="7" required />
+          <br />
+
+          <p>Çalışmak istediğiniz zaman aralıklarını seçin</p>
+          <br />
+          <select id="dropdown">
+            <option disable selected value>Çalışma Saati Seçin</option>
+            <option value="tam">Tam Zamanlı</option>
+            <option value="yarı">Yarı Zamanlı</option>
+            <option value="staj">Staj</option>
+          </select>
+          <br />
+          <p>Kurumumuzdan memnun musunuz?</p>
+          <br />
+          <input type="radio" value="Evet" name="radio-button" id="evet" checked />
+          <label for="evet">Evet</label>
+          <br />
+          <input type="radio" value="Hayır" name="radio-button" id="hayır" />
+          <label for="hayır">Hayır </label>
+          <br />
+          <input type="radio" value="Daha iyi olabilir" name="radio-button" id="dahaiyiolabilir" />
+          <label for="dahaiyiolabilir">Daha iyi olabilir</label>
+          <br />
+
+          <div>
+            <p>Hangi alanda kodlama biliyorsunuz?</p><br />
+            <div><input type="checkbox" value="front-end" name="check-button" id="frontend" /><label for="frontend">front-end</label></div>
+            <input type="checkbox" value="back-end" name="check-button" id="backend" />
+            <label for="backend">back-end</label>
+            <br />
+            <input type="checkbox" value="fullstack" name="check-button" id="fullstack" />
+            <label for="fullstack">fullstack</label>
+            <br />
+            <input type="checkbox" value="data" name="check-button" id="data" />
+            <label for="data">data</label>
+            <br />
+            <input type="checkbox" value="hack" name="check-button" id="hack" />
+            <label for="hack">hack</label>
+            <br />
+            <input type="checkbox" value="güvenlik" name="check-button" id="güvenlik" />
+            <label for="güvenlik">güvenlik</label>
+            <br />
+            <input type="checkbox" value="yapay zeka" name="check-button" id="yapayzeka" />
+            <label for="yapayzeka">yapay zeka</label>
+            <br />
+
+            <p>Eklemek istediğiniz yorum:</p>
+            <br />
+            <textarea placeholder="Buraya Yaz"></textarea><br />
+            <input type="submit" id="submit" />
+
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</div>
+
+</html>
